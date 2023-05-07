@@ -1,0 +1,51 @@
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  @keyframes appleshake {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-1deg); }
+    20% { transform: rotate(2deg); }
+    30% { transform: rotate(-4deg); }
+    40% { transform: rotate(4deg); }
+    50% { transform: rotate(-4deg); }
+    60% { transform: rotate(4deg); }
+    70% { transform: rotate(-4deg); }
+    80% { transform: rotate(2deg); }
+    90% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  @keyframes drop {
+    0% { 
+   
+      transform:rotate(0deg);}
+    25% {
+   
+      transform: rotate(90deg);}
+    50% {
+  
+      transform: rotate(180deg);}
+    75% {
+  
+      transform: rotate(270deg);}
+    100% {
+      top: 74%;
+      transform: rotate(360deg);
+    }
+  }
+  

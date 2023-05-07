@@ -1,0 +1,107 @@
+@import './animations.css';
+
+#root{
+  padding: 0;
+  margin: 0;
+}
+
+#root, body{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+.App{
+  height: 100%;
+  background-image: url('../assets/background.jpg');
+  background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
+}
+
+.basket{
+  height: 20vh;
+  position: absolute;
+  top: 66vh;
+  right: 54.5%;
+}
+
+.tree{
+  position: absolute;
+  height:52vh;
+  top: 31vh;
+  right: 55.5%;
+}
+
+.cloud-btn {
+  position: absolute;
+  display: inline-block;
+  top: 59%;
+  left: 48%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #333;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.cloud-btn:hover {
+  background-color: #5bc0de;
+  color: #fff;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2), 0 0 10px rgba(91, 192, 222, 0.5);
+}
+
+.cloud-btn:hover:before,
+.cloud-btn:hover:after {
+  background-color: #5bc0de;
+  box-shadow: -2px 2px 0 rgba(0, 0, 0, 0.2), 0 0 10px rgba(91, 192, 222, 0.5);
+}
+
+
+
+
+.shake {
+  animation: shake .3s cubic-bezier(.36,.07,.19,.97) both;
+  animation-iteration-count: 10;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+
+
+.apple{
+  position: absolute;
+}
+
+.apple-shake {
+  animation: appleshake .3s ease-in-out;
+  animation-iteration-count: 10;
+}
+
+.drop {
+  animation: drop 1s linear forwards;
+}
+
+.drop:nth-child(1){
+
+  animation-delay: 1.5s;
+}
+.drop:nth-child(2){
+
+  animation-delay: 2s;
+}
+.drop:nth-child(3){
+
+  animation-delay: 2.5s;
+}
+.drop:nth-child(4){
+
+  animation-delay: 3s;
+}
+
